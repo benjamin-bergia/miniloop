@@ -29,7 +29,7 @@ run() {
   #
   printf '%s,%s %s %s\n' \
     'load' \
-    "instance=${metrics_hostname}" \
+    "instance=${MINILOOP_HOSTNAME}" \
     "1m=${one},5m=${five},15m=${fifteen}" \
     "${timestamp}"
 
@@ -38,7 +38,7 @@ run() {
   #
   printf '%s,%s %s %s\n' \
     'processes' \
-    "instance=${metrics_hostname}" \
+    "instance=${MINILOOP_HOSTNAME}" \
     "running=${running},total=${total},last_pid=${pid}" \
     "${timestamp}"
 }
